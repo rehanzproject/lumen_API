@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Introduction
 Lumen is a Stunningly Fast PHP Micro-Framework By Laravel. Which for develop an APIs.<br>
 # Set up 
@@ -19,3 +20,6 @@ Start Apache and MySQL and Create new databases whatever you want  and create ne
 # Postman 
 Open your Postman and Enter request URL `localhost:8000/`
 
+=======
+# lumen_API
+>>>>>>> 398bd31bc68e28704e1a57ad9fca317bb3555fba
