@@ -62,27 +62,3 @@ $router->get('/student/{name}', function ($name) {
     ];
     return $student[$name];
 });
-
-$router->post('/bar', function () {
-    return "Hellow , post method";
-});
-$router->get('/test' , 'SiswaController@get');
-
-
-$router->get('/redir', function () {
-    return redirect ('/age');
-});
-
-$router->get('/address', function () {
-    return "Street Simpang Teluk Bayur Number 70H ";
-});
-
-
-$router->get('/address', function () {
-    return "Street Simpang Teluk Bayur Number 70H ";
-});
-
-
-$router->get('/profile', function () {
-    return "Rehan Maulana ,20 , Street Simpang Teluk Bayur Number 70H ";
-});
