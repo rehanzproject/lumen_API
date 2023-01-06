@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "matkul": "Framework Programming",
+        "kodemk": "FP123",
+        "siswaikut": {
+            "id": 1,
+            "nama": "Rehan ",
+            "age": 19,
+            "profile": "Rehan Maulana Age 19"
+        }
+      
+    }
+]
