@@ -13,9 +13,6 @@
 |
 */
 
-$router->get('/', function () use ($router) {
-    return $router->app->version();
-});
 
 $router->get('/name', function () {
     return "Nama Saya : Rehan Maulana";
@@ -29,21 +26,6 @@ $router->group(['prefix' => 'kelas'], function () use ($router) {
     $router->get('/{id}', 'KelasController@getByID');
     $router->delete('kelas/{id}', 'KelasController@deleteSiswa');
 });
-/*
-$router->group(['prefix' => 'kelas'], function () use ($router) {
-    $router->get('siswa', function () {
-        return [
-            "Rehan" => [
-                 "nama"=> "Rehan", "Umur"=> 18, "Profil"=>"Rehan Maulana Umur 18",
-            ],
-              "Nyoba" => [
-                "nama"=> "Nyoba", "Umur"=> 38, "Profil"=>"Nyoba umur 38",
-             ], "Test" => [
-                 "nama"=> "Halo", "Umur"=> 18, "Profil"=>"Gatau  18",
-             ]];
-    });
-    });
-    */
 $router->group(['prefix' => 'dosen'], function () use ($router){
     $router->get('/', 'DosenController@getAll');
     $router->get('/{id}', 'DosenController@getOne');
